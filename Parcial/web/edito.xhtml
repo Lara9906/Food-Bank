@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+        <title> Datos De Registro </title>
+    </h:head>
+    <h:body>
+
+        <style type="text/css">
+            body {background: aquamarine}
+        </style>
+
+        <center>
+
+
+            <br/><br/>
+            <h1> REGISTRATE </h1><br/><br/><br/><br/>
+
+            <div class="container">
+                <h:form style="with:30%"> 
+
+
+                    <div class="form-group col-md-12">
+                        <label >NOMBRE</label>
+                        <h:inputText class="form-control" value="#{sistema.registro.nombre}" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label >APELLIDO</label>
+                        <h:inputText class="form-control " value="#{sistema.registro.apellido}" />
+                    </div>
+
+                    <div class="form-group col-md-12">
+
+                        <label >CEDULA</label>
+                        <h:inputText class="form-control" required="true" requiredMessage="Campo Obligatorio" readonly="true" value="#{sistema.registro.cedula}" />
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label >EDAD</label>
+                        <h:inputText class="form-control" value="#{sistema.registro.edad}" />
+                    </div>
+
+                    <div class="form-group col-md-12">
+                        <label>CORREO</label>
+                        <h:inputText class="form-control" value="#{sistema.registro.correo}"/>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label>TELEFONO</label>
+                        <h:inputText class="form-control" value="#{sistema.registro.telefono}"/> </div>
+                        
+                        <div class="form-group col-md-12">
+
+                            <label >CONTRASEÑA</label>
+                            <h:inputText class="form-control" required="true" requiredMessage="Campo Obligatorio" readonly="true" value="#{sistema.registro.contraseña}"/>
+                        
+
+                    </div>
+
+                    <h:commandButton class="btn btn-primary" value="GUARDAR" action="menu"/>
+
+                </h:form></div>
+        </center>
+    </h:body>
+</html>
+

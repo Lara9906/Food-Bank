@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+        <title> NUEVO SALDO</title>       
+
+    </h:head>
+    <h:body>
+
+        <style type="text/css">
+            body {background: yellow}
+        </style>
+
+        <center>
+
+            <div class="container">
+
+                <h:form style="with:50%">
+
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <h1> SU SALDO ACTUALMENTE ES: </h1>
+                    <br/><br/><br/><br/><br/>
+                    <input class="form-control" type="text" placeholder="#{sistema.loggin.saldo}" /><br/><br/><br/>
+
+                    <h:commandButton value="OK" class="btn btn-success" action="menu" /><br/><br/>
+                    <h:commandButton value="SALIR" class="btn btn-primary" action="index" /><br/><br/>
+
+                </h:form>
+
+            </div>
+
+        </center>
+    </h:body>
+</html>
+
